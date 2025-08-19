@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wikipédia (mock – HTML puro)</title>
+</head>
+<body>
+  <header role="banner">
+    <div>Wikipédia</div>
+
+    <nav aria-label="Acesso rápido">
+      <ul>
+        <li><a href="#">Criar conta</a></li>
+        <li><a href="#">Entrar</a></li>
+        <li><a href="#">Discussão</a></li>
+        <li><a href="#">Contribuições</a></li>
+      </ul>
+    </nav>
+
+    <form action="https://pt.wikipedia.org/wiki/Especial:Pesquisar" method="get" role="search">
+      <label for="search">Pesquisar na Wikipédia</label>
+      <input id="search" name="search" type="search" placeholder="Pesquisar" />
+      <button type="submit">Pesquisar</button>
+    </form>
+    <hr />
+  </header>
+
+  <div>
+    <aside aria-label="Barra lateral">
+      <nav aria-label="Navegação">
+        <h2>Conteúdo</h2>
+        <ul>
+          <li><a href="#">Portal principal</a></li>
+          <li><a href="#">Conteúdo destacado</a></li>
+          <li><a href="#">Eventos atuais</a></li>
+          <li><a href="#">Esplanada</a></li>
+          <li><a href="#">Sobre a Wikipédia</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Donativos</a></li>
+        </ul>
+
+        <h2>Interagir</h2>
+        <ul>
+          <li><a href="#">Criar página</a></li>
+          <li><a href="#">Páginas para editores</a></li>
+          <li><a href="#">Carregar ficheiro</a></li>
+          <li><a href="#">Páginas especiais</a></li>
+          <li><a href="#">Informações da página</a></li>
+        </ul>
+
+        <h2>Em outros projetos</h2>
+        <ul>
+          <li><a href="#">Wikcionário</a></li>
+          <li><a href="#">Wikidata</a></li>
+          <li><a href="#">Wikivoyage</a></li>
+          <li><a href="#">Commons</a></li>
+          <li><a href="#">Wikilivros</a></li>
+        </ul>
+
+        <h2>Idiomas</h2>
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">Español</a></li>
+          <li><a href="#">Français</a></li>
+          <li><a href="#">Deutsch</a></li>
+          <li><a href="#">Italiano</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </aside>
+
+    <main id="conteudo" role="main">
+      <article>
+        <header>
+          <h1>Brasil</h1>
+          <p>Origem: Wikipédia, a enciclopédia livre.</p>
+        </header>
+
+        <aside aria-label="Infobox">
+          <table>
+            <caption>Brasil</caption>
+            <tbody>
+              <tr>
+                <th scope="row">Capital</th>
+                <td>Brasília</td>
+              </tr>
+              <tr>
+                <th scope="row">Idioma</th>
+                <td>Português</td>
+              </tr>
+              <tr>
+                <th scope="row">População</th>
+                <td>—</td>
+              </tr>
+              <tr>
+                <th scope="row">Moeda</th>
+                <td>Real (BRL)</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+
+        <nav aria-label="Sumário">
+          <h2>Sumário</h2>
+          <ol>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#etimologia">Etimologia</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#geografia">Geografia</a></li>
+            <li><a href="#economia">Economia</a></li>
+            <li><a href="#cultura">Cultura</a></li>
+            <li><a href="#ver-tambem">Ver também</a></li>
+            <li><a href="#referencias">Referências</a></li>
+            <li><a href="#ligacoes-externas">Ligações externas</a></li>
+          </ol>
+        </nav>
+
+        <section id="introducao">
+          <h2>Introdução</h2>
+          <p>Este é um mock (exemplo educacional) que replica a estrutura de uma página da Wikipédia usando apenas HTML. Sem estilos ou scripts, a disposição visual fica simples, focada na marcação semântica.</p>
+        </section>
+
+        <section id="etimologia">
+          <h2>Etimologia</h2>
+          <p>Conteúdo de exemplo para a seção de etimologia. Parágrafos, listas, citações e tabelas podem ser usados conforme necessário.</p>
+        </section>
+
+        <section id="historia">
+          <h2>História</h2>
+          <p>Conteúdo de exemplo para a seção de história. Você pode subdividir com cabeçalhos menores conforme o padrão enciclopédico.</p>
+          <h3>Período colonial</h3>
+          <p>Texto ilustrativo para subtópicos dentro da seção principal.</p>
+          <h3>Independência</h3>
+          <p>Mais conteúdo ilustrativo.</p>
+        </section>
+
+        <section id="geografia">
+          <h2>Geografia</h2>
+          <p>Conteúdo de exemplo para a seção de geografia.</p>
+          <ul>
+            <li>Clima</li>
+            <li>Relevo</li>
+            <li>Biomas</li>
+          </ul>
+        </section>
+
+        <section id="economia">
+          <h2>Economia</h2>
+          <p>Conteúdo de exemplo para a seção de economia.</p>
+          <table>
+            <caption>Indicadores econômicos (exemplo)</caption>
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PIB</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Exportações</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="cultura">
+          <h2>Cultura</h2>
+          <p>Conteúdo de exemplo para a seção de cultura.</p>
+          <figure>
+            <figcaption>Legenda de imagem (exemplo).</figcaption>
+          </figure>
+        </section>
+
+        <section id="ver-tambem">
+          <h2>Ver também</h2>
+          <ul>
+            <li><a href="#">América do Sul</a></li>
+            <li><a href="#">Países lusófonos</a></li>
+            <li><a href="#">História do Brasil</a></li>
+          </ul>
+        </section>
+
+        <section id="referencias">
+          <h2>Referências</h2>
+          <ol>
+            <li>Referência 1 (exemplo).</li>
+            <li>Referência 2 (exemplo).</li>
+            <li>Referência 3 (exemplo).</li>
+          </ol>
+        </section>
+
+        <section id="ligacoes-externas">
+          <h2>Ligações externas</h2>
+          <ul>
+            <li><a href="https://pt.wikipedia.org" target="_blank" rel="noopener">Wikipédia em português</a></li>
+            <li><a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a></li>
+          </ul>
+        </section>
+
+        <footer>
+          <hr />
+          <p>Esta é uma página de exemplo para fins didáticos, sem afiliação à Wikimedia Foundation.</p>
+          <p>Última edição desta página de exemplo: 18 de agosto de 2025.</p>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <footer role="contentinfo">
+    <hr />
+    <p>Conteúdo disponível nos termos de licença de exemplo. Wikipedia® é marca registrada da Wikimedia Foundation, Inc. (uso meramente ilustrativo).</p>
+  </footer>
+</body>
+</html>
