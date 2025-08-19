@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículo – Camila H. Siqueira</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f172a;
+      --muted:#94a3b8;
+      --text:#e2e8f0;
+      --brand:#4f46e5;
+      --chip:#1e293b;
+      --ring: rgba(79,70,229,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f7fb; --card:#ffffff; --muted:#475569; --text:#0f172a; --chip:#eef2ff; --ring: rgba(79,70,229,.25);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font: 500 16px/1.6 system-ui,Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 10% -10%, rgba(79,70,229,.12), transparent 50%),
+                  radial-gradient(900px 700px at 110% 10%, rgba(14,165,233,.12), transparent 50%), var(--bg);
+      color:var(--text);
+    }
+    .container{max-width:1100px; margin:24px auto; padding: clamp(12px, 2.2vw, 24px)}
+
+    .grid{display:grid; gap:clamp(12px, 2vw, 20px)}
+    @media (min-width: 920px){
+      .grid{grid-template-columns: 340px 1fr}
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 22%), var(--card);
+      border:1px solid rgba(148,163,184,.15);
+      border-radius:18px;
+      padding: clamp(16px, 2.2vw, 22px);
+      box-shadow: 0 10px 30px -12px rgba(2,6,23,.45);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .card:hover{ transform: translateY(-2px); box-shadow: 0 18px 40px -14px rgba(2,6,23,.6); border-color: rgba(79,70,229,.35)}
+
+    .profile{ display:flex; flex-direction: column; gap:16px; align-items:flex-start}
+    .avatar{
+      inline-size: 88px; block-size:88px; border-radius: 22px; display:grid; place-items:center;
+      background: linear-gradient(135deg, rgba(79,70,229,.18), rgba(14,165,233,.18));
+      color:var(--brand); font-weight:800; font-size:28px; border:1px solid rgba(79,70,229,.3);
+      box-shadow: inset 0 0 0 6px rgba(79,70,229,.08);
+    }
+    .title{ display:flex; flex-direction:column; gap:6px}
+    .title h1{ margin:0; font-size: clamp(20px, 2.2vw + 8px, 30px); letter-spacing:.2px}
+    .title p{ margin:0; color:var(--muted)}
+
+    .contact{ display:grid; gap:8px; margin-top:8px}
+    .contact a{ color:var(--text); text-decoration:none; display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:10px; background: var(--chip); border:1px solid rgba(148,163,184,.2)}
+    .contact a:hover{ outline:2px solid var(--ring)}
+
+    .section h2{ margin:0 0 10px 0; font-size: clamp(16px, 1.6vw + 8px, 22px)}
+    .muted{ color:var(--muted)}
+
+    .chips{ display:flex; flex-wrap:wrap; gap:8px}
+    .chip{ padding:6px 10px; border-radius:999px; background: var(--chip); border:1px solid rgba(148,163,184,.18); font-size: 14px}
+
+    .timeline{ display:grid; gap:14px}
+    .job{ position:relative; padding-left:18px}
+    .job:before{ content:""; position:absolute; left:6px; top:6px; bottom:-6px; width:2px; background: linear-gradient(var(--brand), transparent)}
+    .job:after{ content:""; position:absolute; left:0; top:6px; width:14px; height:14px; border-radius:50%; background: var(--brand); box-shadow:0 0 0 4px var(--ring)}
+    .job h3{ margin:0 0 4px 0; font-size:16px}
+    .job .where{ font-weight:600}
+    .job .when{ color:var(--muted); font-size:14px}
+    .job ul{ margin:8px 0 0 0; padding-left:18px}
+    .job li{ margin:6px 0}
+
+    footer{ text-align:center; color:var(--muted); padding:26px 10px}
+
+    @media print{
+      body{ background:#fff; color:#000 }
+      .card{ box-shadow:none; border-color:#ddd }
+      .contact a{ background:#f3f4f6 }
+    }
+  </style>
+</head>
+<body>
+  <div class="container grid">
+    <aside class="card profile">
+      <div class="avatar" aria-hidden="true">CS</div>
+      <div class="title">
+        <h1>Camila H. Siqueira</h1>
+        <p>Database Administrator • DBA Oracle • SQL Server</p>
+        <p class="muted">São Paulo, SP, Brasil</p>
+      </div>
+
+      <div class="section">
+        <h2>Contato</h2>
+        <div class="contact">
+          <a href="mailto:milahipolito03@outlook.com" aria-label="Enviar e-mail para Camila">
+            ✉️ <span>milahipolito03@outlook.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/acamilasiqueira" target="_blank" rel="noopener" aria-label="Visitar LinkedIn de Camila">
+            🔗 <span>linkedin.com/in/acamilasiqueira</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Competências</h2>
+        <div class="chips">
+          <span class="chip">Red Hat Enterprise Linux (RHEL)</span>
+          <span class="chip">Microsoft SQL Server</span>
+          <span class="chip">Oracle</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Certificações</h2>
+        <ul class="muted" style="margin:0 0 0 18px; padding:0">
+          <li>Fundamentos em Cibersegurança</li>
+          <li>Boas Práticas de Cibersegurança</li>
+          <li>Terminal Linux</li>
+          <li>Database Experience</li>
+          <li>Fundamentos em Redes</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="grid">
+      <section class="card section">
+        <h2>Resumo</h2>
+        <p class="muted">Profissional de infraestrutura e bancos de dados com experiência em M365, redes, virtualização e administração de SGBDs (Oracle, SQL Server, MySQL, PostgreSQL, MongoDB). Atuação em automação, observabilidade e segurança.</p>
+      </section>
+
+      <section class="card section">
+        <h2>Experiência</h2>
+        <div class="timeline">
+          <article class="job">
+            <h3 class="where">Komatsu Brasil — Analista de Infraestrutura de TI Júnior</h3>
+            <div class="when">jul/2024 – presente</div>
+            <ul>
+              <li>Administração avançada do Microsoft 365 (Exchange Online, SharePoint, Defender, Intune, Purview, Entra ID, SAML, Microsoft Graph).</li>
+              <li>DNS no Azure e domínios personalizados; integração de apps via Azure Apps; sincronização AD local ↔ Entra ID.</li>
+              <li>Ambientes virtualizados com VMware vCenter; provisão e manutenção de VMs.</li>
+              <li>Segurança: Trellix (McAfee), monitoramento e proteção de servidores.</li>
+              <li>Redes: cabeamento, VLANs, switches e APs Cisco; RDS; videomonitoramento Hikvision.</li>
+              <li>Automação (PowerApps, Power Automate) e suporte técnico de TI.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <h3 class="where">Komatsu Brasil — Analista de Infraestrutura de TI Trainee</h3>
+            <div class="when">out/2022 – jun/2024</div>
+            <ul>
+              <li>Administração de SGBDs (Oracle, SQL Server, MySQL, PostgreSQL, MongoDB) e execução de scripts (DDL, DML, DQL, DTL, DCL).</li>
+              <li>Rotinas de backup (SQL, Shell Script, DTSX), performance tuning e administração de recursos de servidor.</li>
+              <li>Windows: GPO, DNS, DFS, WSUS; Linux para servidores de SGBD.</li>
+              <li>Monitoramento com Zabbix e Grafana; VMs com Hyper‑V, XenServer e oVirt.</li>
+              <li>Gerenciamento de processos com Pentaho; backup com Veeam.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <h3 class="where">Auxiliar de Operação de Data Center</h3>
+            <div class="when">abr/2022 – set/2022 · São Paulo, Brasil</div>
+            <ul>
+              <li>Monitoramento de ativos (Zabbix, Grafana) e verificação de ativos físicos de datacenter.</li>
+              <li>Administração de servidores Windows, AD, File Server; rede (Cisco, Dell, Enterasys) e Wi‑Fi Ruckus.</li>
+              <li>Telefonia PABX/VoIP (Avaya/Intelbras) e projetos de cabeamento estruturado.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <h3 class="where">Auxiliar de Service Desk Trainee</h3>
+            <div class="when">jan/2022 – abr/2022 · São Paulo, Brasil</div>
+            <ul>
+              <li>Atendimento ao usuário final (remoto/presencial), gestão de chamados e manutenção de equipamentos.</li>
+              <li>MDM com VM Hub; implementação de GLPI para gestão de ativos e estoque.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <h3 class="where">Estagiária de Service Desk</h3>
+            <div class="when">jul/2021 – dez/2021 · São Paulo, Brasil</div>
+            <ul>
+              <li>Suporte ao usuário final; criação de dashboards Power BI para monitorar impressoras, chips e celulares.</li>
+              <li>MDM com VM Hub; registro e gestão de chamados.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="card section">
+        <h2>Formação Acadêmica</h2>
+        <ul style="margin:0 0 0 18px; padding:0">
+          <li><strong>UNINOVE</strong> — Pós-graduação Lato Sensu (MBA), Gestão de Negócios · fev/2023 – fev/2024</li>
+          <li><strong>UNINOVE</strong> — Curso Superior de Tecnologia (CST), Segurança da Informação · jul/2020 – dez/2022</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2025 — Camila H. Siqueira
+  </footer>
+</body>
+</html>
